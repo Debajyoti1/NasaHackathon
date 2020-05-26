@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<section class="container">
+	<button class="btn-warning border-success">
+		click me
+	</button>
+</section>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+	<script>
+
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+  $("button").mouseover(function(event) {
+  	console.log("hi");
+  			for(var i=0;i<10;i++){
+			console.log("hi");
+		}
+  });
+});
+</script>
+</body>
+</html>

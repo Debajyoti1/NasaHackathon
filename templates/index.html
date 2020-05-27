@@ -6,8 +6,8 @@
 {% block body %}
 <section class="container-fluid text-center bg-faded my-4">
     This Chart is Population vs Confirmed Cases<br>
-    X-axis: Confirmed<br>
-    Y-axis: Population
+    X-axis: Population<br>
+    Y-axis: Confirmed
 </section>
 <section class="container">
     <canvas id="myChart"></canvas>
@@ -19,15 +19,15 @@
             var ctx = document.getElementById('myChart').getContext('2d');
             var chart = new Chart(ctx, {
                 // The type of chart we want to create
-                type: 'line',
+                type: 'bar',
                 // The data for our dataset
                 data: {
-                    labels: confirmed.confirmed,
+                    labels: population.population,
                     datasets: [{
-                        label: 'Population',
+                        label: 'Confirmed',
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgb(255, 99, 132)',
-                        data: population.population
+                        data: confirmed.confirmed
                     }]
                 },
 

@@ -3,6 +3,7 @@ from random import sample
 import pandas as pd
 
 dataframe=pd.read_csv("dataset.csv")
+dataframe=dataframe.sort_values(by='Population')
 confirmed=list(dataframe['Confirmed'])
 population=list(dataframe['Population'])
 area=list(dataframe['Area'])

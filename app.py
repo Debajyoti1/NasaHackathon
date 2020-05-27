@@ -4,12 +4,6 @@ import pandas as pd
 
 dataframe=pd.read_csv("dataset.csv")
 
-area=list(dataframe['Area'])
-density=list(dataframe['Density'])
-active=list(dataframe['Active'])
-
-
-
 app = Flask(__name__)
 app.secret_key='Hellothere'
 

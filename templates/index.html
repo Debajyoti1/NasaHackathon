@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}
 <title>NASA HAckathon Project</title>
+
 {% endblock %}
 
 {% block body %}
@@ -10,32 +11,34 @@
     Y-axis: Confirmed
 </section>
 <section class="container">
-    <canvas id="myChart"></canvas>
-    <script>
-        var getData = $.get('/confirmedj');
-        var get = $.get('/populationj');
-        get.done(function(population){
-        getData.done(function(confirmed){
-            var ctx = document.getElementById('myChart').getContext('2d');
-            var chart = new Chart(ctx, {
-                // The type of chart we want to create
-                type: 'bar',
-                // The data for our dataset
-                data: {
-                    labels: population.population,
-                    datasets: [{
-                        label: 'Confirmed',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: confirmed.confirmed
-                    }]
-                },
-
-                // Configuration options go here
-                options: {}
-            });
-        });
-    });
-    </script>
+    <canvas id="popvsconf" ></canvas>
 </section>
+
+<section class="container-fluid text-center bg-faded my-4">
+    This Chart is Area vs Confirmed Cases<br>
+    X-axis: Area<br>
+    Y-axis: Confirmed
+</section>
+<section class="container">
+    <canvas id="areavsconf" ></canvas>
+</section>
+
+<section class="container-fluid text-center bg-faded my-4">
+    This Chart is Density vs Confirmed Cases<br>
+    X-axis: Density<br>
+    Y-axis: Confirmed
+</section>
+<section class="container">
+    <canvas id="denvsconf" ></canvas>
+</section>
+
+<section class="container-fluid text-center bg-faded my-4">
+    This Chart is Active Cases vs Confirmed Cases<br>
+    X-axis: Active<br>
+    Y-axis: Confirmed
+</section>
+<section class="container">
+    <canvas id="actvsconf" ></canvas>
+</section>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 {% endblock %}

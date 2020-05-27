@@ -3,12 +3,11 @@ from random import sample
 import pandas as pd
 
 dataframe=pd.read_csv("dataset.csv")
-dataframe=dataframe.sort_values(by='Population')
-confirmed=list(dataframe['Confirmed'])
-population=list(dataframe['Population'])
+
 area=list(dataframe['Area'])
 density=list(dataframe['Density'])
 active=list(dataframe['Active'])
+
 
 
 app = Flask(__name__)
@@ -18,26 +17,37 @@ app.secret_key='Hellothere'
 def index():
     return render_template('index.html')
 
-@app.route('/confirmedj')
-def confirmedj():
-    return jsonify({'confirmed' : confirmed})
+@app.route('/popvsconf')
+def popvsconf(df=dataframe):
+    df=df.sort_values(by='Population')
+    confirmed=list(df['Confirmed'])
+    population=list(df['Population'])
+    confirmed.remove(31972)
+    population.remove(3145966)
+    return jsonify({'confirmed' : confirmed,'population' : population})
 
 
-@app.route('/populationj')
-def populationj():
-    return jsonify({'population' : population})
+@app.route('/areavsconf')
+def areavsconf(df=dataframe):
+    df=df.sort_values(by='Area')
+    confirmed=list(df['Confirmed'])
+    area=list(map(int,(df['Area'])))
+    return jsonify({'confirmed' : confirmed,'area' : area})
 
-@app.route('/areaj')
-def areaj():
-    return jsonify({'area' : area})
+@app.route('/denvsconf')
+def denvsconf(df=dataframe):
+    df=df.sort_values(by='Density')
+    confirmed=list(df['Confirmed'])
+    density=list(map(int,(df['Density'])))
+    return jsonify({'confirmed' : confirmed,'density' : density})
 
-@app.route('/densityj')
-def densityj():
-    return jsonify({'density' : density})
+@app.route('/actvsconf')
+def actvsconf(df=dataframe):
+    df=df.sort_values(by='Active')
+    confirmed=list(df['Confirmed'])
+    active=list(df['Active'])
+    return jsonify({'confirmed' : confirmed,'active' : active})
 
-@app.route('/activej')
-def activej():
-    return jsonify({'active' : active})
 
 if __name__ == '__main__':
     app.run(debug=True)

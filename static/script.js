@@ -12,8 +12,8 @@
                         label: 'Confirmed',
                         fill: false,
                         borderWidth: 1,
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 199, 224)',
+                        backgroundColor: 'rgb(255, 0, 30)',
+                        borderColor: 'rgb(255, 255, 225)',
                         data: popvsconf.confirmed
                     }]
                 },
@@ -35,8 +35,8 @@
                         label: 'Confirmed',
                         fill: false,
                         borderWidth: 1,
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 199, 224)',
+                        backgroundColor: 'rgb(89, 0, 255)',
+                        borderColor: 'rgb(255, 255, 225)',
                         data: areavsconf.confirmed
                     }]
                 },
@@ -58,8 +58,8 @@
                         label: 'Confirmed',
                         fill: false,
                         borderWidth: 1,
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 199, 224)',
+                        backgroundColor: 'rgb(9, 255, 0)',
+                        borderColor: 'rgb(255, 255, 225)',
                         data: denvsconf.confirmed
                     }]
                 },
@@ -82,8 +82,8 @@
                         label: 'Confirmed',
                         fill: false,
                         borderWidth: 1,
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 199, 224)',
+                        backgroundColor: 'rgb(0, 153, 255)',
+                        borderColor: 'rgb(255, 255, 225)',
                         data: actvsconf.confirmed
                     }]
                 },

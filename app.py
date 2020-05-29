@@ -6,7 +6,6 @@ dataframe=pd.read_csv("dataset.csv")
 dataframe=dataframe.sort_values(by='Confirmed')
 for _ in range(6):
     dataframe.drop(dataframe.index[-1], inplace= True)
-print(dataframe)
 app = Flask(__name__)
 app.secret_key='Hellothere'
 

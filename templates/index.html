@@ -4,9 +4,14 @@
 
 {% endblock %}
 {% block body %}
-
-<section class="container">
-<div class="card text-center">
+<script>
+  $(document).ready(function(){
+  $("#panel").hide();
+  $("#panel").show("slow");
+});
+</script>
+<section class="container" id="flip">
+<div class="card text-center" id="panel">
 <img src="{{ url_for('static', filename='i1.jpg') }}" class="card-img-top" alt="head" style="height: 70vh;">
   <div class="card-body">
     <h2 class="card-title">Project Summary</h2>

@@ -19,7 +19,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Population'
+                          }
+                        }]
+                     }
+                }
             });
         });
         var getData1 = $.get('/areavsconf');
@@ -42,7 +63,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Area'
+                          }
+                        }]
+                     }
+                }
             });
         });
         var getData2 = $.get('/denvsconf');
@@ -65,7 +107,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Density'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -89,7 +152,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Active Cases'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -113,7 +197,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Retail'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -137,7 +242,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Grocery'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -161,7 +287,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Parks'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -185,7 +332,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Stations'
+                          }
+                        }]
+                     }
+                }
             });
         });
 
@@ -209,7 +377,28 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Work Places'
+                          }
+                        }]
+                     }
+                }
             });
         });
         var getData9 = $.get('/resvsconf');
@@ -232,6 +421,27 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    scales: {
+                        xAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Confirmed Cases'
+                          }
+                        }],
+                        yAxes: [{
+                           gridLines: {
+                              display: false
+                           },
+                           scaleLabel: {
+                            display: true,
+                            labelString: 'Residential'
+                          }
+                        }]
+                     }
+                }
             });
         });

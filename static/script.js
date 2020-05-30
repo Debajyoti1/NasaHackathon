@@ -100,7 +100,7 @@
                         label: 'Confirmed',
                         fill: false,
                         borderWidth: 1,
-                        backgroundColor: 'rgb(9, 255, 0)',
+                        backgroundColor: 'rgb(0, 84, 240)',
                         borderColor: 'rgb(255, 255, 225)',
                         data: denvsconf.confirmed
                     }]

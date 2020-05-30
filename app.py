@@ -7,7 +7,7 @@ dataframe=dataframe.sort_values(by='Confirmed')
 for _ in range(6):
     dataframe.drop(dataframe.index[-1], inplace= True)
 app = Flask(__name__)
-app.secret_key='Hellothere'
+app.secret_key='d7afcbc8d55d6266483a4d1f2b6ee8599e2543b45f3c4c2d'
 
 @app.route('/')
 def index():

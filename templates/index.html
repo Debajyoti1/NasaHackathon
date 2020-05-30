@@ -4,21 +4,83 @@
 
 {% endblock %}
 {% block body %}
-<script>
-  $(document).ready(function(){
-  $("#panel").hide();
-  $("#panel").show("slow");
-});
-</script>
-<section class="container" id="flip">
-<div class="card text-center" id="panel">
-<img src="{{ url_for('static', filename='i1.jpg') }}" class="card-img-top" alt="head" style="height: 70vh;">
+<section class="" style="background-image: url(https://debajyoti.tk/i3.jpg); background-repeat: no-repeat; height: 90vh; width: 100vw; background-size: cover; opacity: 90%">
+	<span class="display-4 text-white text-left" style=" padding: 100px;">
+		NASA HACKATHON
+		<p class="display-4 text-left">Lets Fight </p>
+	</span>
+	
+</section>
+<section style="padding: 7%;">
+<div class="card text-center">
   <div class="card-body">
-    <h2 class="card-title">Project Summary</h2>
-    <p class="card-text"><h5>After running different machine learning models and algorithms,Here we came up with our final dataset and plotted 8 different graphs which help us to identify the hunan factors that may lead to the spread of COVID-19 .</h5></p>
-    <a href="/graph" class="btn btn-primary">Show Graph</a>
+    <h5 class="card-title">How COVID-19 Spreads?</h5>
+    <p class="card-text">the covid 19 virus spreads primarily through droplets  of saliva or discharge  from the nose  when an infected person coughs or sneezes . the best way to prevent and slow down transmission is to be well informedabout covid-19 the disease cause and how it spreads</p>
   </div>
 </div>
+</section>
+<section class="container text-center">
+	<h5 class="card-title">Our Team</h5>
+			<div class="row">
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+		  <img src="{{ url_for('static', filename='pra.jpeg') }}" style="height: 350px" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">Praveen</h5>
+		    <p class="card-text">Backend,Machine Learning</p>
+		  </div>
+		</div>
+		    </div>
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+		  <img src="{{ url_for('static', filename='ritwik.jpeg') }}" style="height: 350px" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">Ritwik</h5>
+		    <p class="card-text">Backend,Machine Learning</p>
+		  </div>
+		</div>
+		    </div>
+		    <div class="col-sm">
+			  <div class="card" style="width: 18rem;">
+			  <img src="{{ url_for('static', filename='src.jfif') }}" style="height: 350px" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Somenath</h5>
+			    <p class="card-text">Mentor</p>
+			  </div>
+			</div>
+		    </div>
+		  </div>
+</section>
+<section class="container text-center" style="padding: 20px;">
+			<div class="row">
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+		  <img src="{{ url_for('static', filename='arka.jpeg') }}" style="height: 350px" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">Arkaprabha</h5>
+		    <p class="card-text">Frontend</p>
+		  </div>
+		</div>
+		    </div>
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+		  <img src="{{ url_for('static', filename='deba.jpg') }}" style="height: 350px" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">Debadrita</h5>
+		    <p class="card-text">Server,Frontend</p>
+		  </div>
+		</div>
+		    </div>
+		    <div class="col-sm">
+			  <div class="card" style="width: 18rem;">
+			  <img src="{{ url_for('static', filename='me.jpg') }}" style="height: 350px" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Debajyoti</h5>
+			    <p class="card-text">Server,Frontend</p>
+			  </div>
+			</div>
+		    </div>
+		  </div>
 </section>
 
 {% endblock %}

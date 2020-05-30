@@ -18,6 +18,7 @@ def index():
 def favicon():
     return url_for('static', filename='favicon.ico')
 
+
 @app.route('/graph')
 def graph():
     return render_template('graph.html')

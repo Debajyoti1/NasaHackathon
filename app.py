@@ -7,6 +7,10 @@ dataframe=dataframe.sort_values(by='Confirmed')
 for _ in range(6):
     dataframe.drop(dataframe.index[-1], inplace= True)
 
+
+dataframe2=pd.read_csv("dataset2.csv")
+
+
 app = Flask(__name__)
 app.secret_key='d7afcbc8d55d6266483a4d1f2b6ee8599e2543b45f3c4c2d'
 
@@ -18,6 +22,10 @@ def index():
 def favicon():
     return url_for('static', filename='favicon.ico')
 
+@app.route('/df2')
+def df2(df=dataframe2):
+    districts=list(df['District'])
+    return jsonify({'district' : districts})
 
 @app.route('/graph')
 def graph():

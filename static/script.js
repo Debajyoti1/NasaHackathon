@@ -27,7 +27,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Population'
                           }
                         }],
                         yAxes: [{
@@ -36,7 +36,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Population'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -71,7 +71,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Area'
                           }
                         }],
                         yAxes: [{
@@ -80,7 +80,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Area'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -115,7 +115,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Density'
                           }
                         }],
                         yAxes: [{
@@ -124,7 +124,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Density'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -160,7 +160,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Active Cases'
                           }
                         }],
                         yAxes: [{
@@ -169,7 +169,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Active Cases'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -205,7 +205,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Retail Mobility'
                           }
                         }],
                         yAxes: [{
@@ -214,7 +214,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Retail'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -250,7 +250,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Grocery Mobility'
                           }
                         }],
                         yAxes: [{
@@ -259,7 +259,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Grocery'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -295,7 +295,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Parks Mobility'
                           }
                         }],
                         yAxes: [{
@@ -304,7 +304,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Parks'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -340,7 +340,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Stations Mobility'
                           }
                         }],
                         yAxes: [{
@@ -349,7 +349,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Stations'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -385,7 +385,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'WorkPlaces Mobility'
                           }
                         }],
                         yAxes: [{
@@ -394,7 +394,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Work Places'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
@@ -429,7 +429,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Confirmed Cases'
+                            labelString: 'Residential Mobility'
                           }
                         }],
                         yAxes: [{
@@ -438,7 +438,7 @@
                            },
                            scaleLabel: {
                             display: true,
-                            labelString: 'Residential'
+                            labelString: 'Confirmed Cases'
                           }
                         }]
                      }
